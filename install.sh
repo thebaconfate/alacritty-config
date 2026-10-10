@@ -1,15 +1,18 @@
 #!/usr/bin/env bash
-
 set -e
 
-# Get the absolute path of where this script (and your alacritty configs) lives
+CONFIG_DIR="$HOME/.config/alacritty"
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo "Setting up Alacritty config"
 
-# Ensure target config directory exists
-mkdir -p ~/.config/alacritty
+mkdir -p "$CONFIG_DIR"
 
-# Symlink individual configuration files
-ln -sfn "$DOTFILES_DIR/alacritty.toml" ~/.config/alacritty/alacritty.toml
-ln -sfn "$DOTFILES_DIR/alacritty/keybindings.toml" ~/.config/alacritty/keybindings.toml
+files=(
+  keybindings.toml
+  alacritty.toml
+)
+
+for file in "${files[@]}"; do
+  ln -sf "$DOTFILES_DIR/$file" "$CONFIG_DIR/$file"
+done
