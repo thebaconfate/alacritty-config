@@ -2,3 +2,16 @@
 import = [
     "keybindings.toml"
 ]
+
+[env]
+# Ensures True Color (24-bit) support works seamlessly in tmux and Neovim
+TERM = "alacritty"
+
+[window]
+padding = { x = 6, y = 6 }
+# Set to "Full" or "None" if you prefer borderless windows
+decorations = "None"
+# Start directly into maximized state if desired
+startup_mode = "Maximized"
+
+
