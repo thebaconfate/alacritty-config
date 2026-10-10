@@ -1,5 +1,4 @@
 [general]
 import = [
-    # "vscode-dark.toml",
     "keybindings.toml"
 ]

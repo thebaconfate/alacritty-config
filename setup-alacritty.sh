@@ -7,7 +7,6 @@ DOTFILES_DIR="$HOME/.dotfiles/alacritty-config"
 mkdir -p "$CONFIG_DIR"
 
 files=(
-  vscode-dark.toml
   keybindings.toml
   alacritty.toml
 )
