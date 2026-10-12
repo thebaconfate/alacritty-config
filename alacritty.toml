@@ -7,6 +7,11 @@ import = [
 # Ensures True Color (24-bit) support works seamlessly in tmux and Neovim
 TERM = "alacritty"
 
+[font]
+normal = { family = "CodeNewRoman Nerd Font Mono", style = "Regular" }
+bold = { family = "CodeNewRoman Nerd Font Mono", style = "Bold" }
+italic = { family = "CodeNewRoman Nerd Font Mono", style = "Italic" }
+
 [window]
 padding = { x = 6, y = 6 }
 # Set to "Full" or "None" if you prefer borderless windows
