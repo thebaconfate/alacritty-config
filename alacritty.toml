@@ -3,10 +3,6 @@ import = [
     "keybindings.toml"
 ]
 
-[env]
-# Ensures True Color (24-bit) support works seamlessly in tmux and Neovim
-TERM = "alacritty"
-
 [font]
 normal = { family = "CodeNewRoman Nerd Font Mono", style = "Regular" }
 bold = { family = "CodeNewRoman Nerd Font Mono", style = "Bold" }
