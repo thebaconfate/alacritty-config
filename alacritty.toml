@@ -4,6 +4,7 @@ import = [
 ]
 
 [font]
+size = 11.5
 normal = { family = "CodeNewRoman Nerd Font Mono", style = "Regular" }
 bold = { family = "CodeNewRoman Nerd Font Mono", style = "Bold" }
 italic = { family = "CodeNewRoman Nerd Font Mono", style = "Italic" }
