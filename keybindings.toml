@@ -1,4 +1,7 @@
 [keyboard]
 bindings = [
-  { key = "F11", action = "ToggleFullscreen" }
+  { key = "F11", action = "ToggleFullscreen" },
+  # Without title bar buttons there's no other way to maximize on macOS, where F11 shows
+  # the desktop. Command is Super on Linux.
+  { key = "Enter", mods = "Command|Control", action = "ToggleMaximized" }
 ]
