@@ -12,7 +12,7 @@ italic = { family = "CodeNewRoman Nerd Font Mono", style = "Italic" }
 [window]
 padding = { x = 6, y = 6 }
 # Set to "Full" or "None" if you prefer borderless windows
-decorations = "None"
+decorations = "Buttonless"
 # Start directly into maximized state if desired
 startup_mode = "Maximized"
 
